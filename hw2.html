@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form HW2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Signin()">Sign in</button>
+                <button type="button" class="toggle-btn" onclick="Signup()">Sign up</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png" alt="fb logo">
+                <img src="gmail.png" alt="gmail logo">
+            </div>
+            <form id="sign-in" class="input-group">
+                <label for="userid">User id*:</label>
+                <input type="text" class="input-field" id="userid" placeholder=" Will Smith" required>
+                <label for="email">Email*:</label>
+                <input type="text" class="input-field" id="email" placeholder=" willsmith@gmail.com"required>
+                <label for="password">Password*:</label>
+                <input type="text" class="input-field" id="password" placeholder=" character, number, special icon" required><br />
+                <input type="checkbox" class="check-box"><span>Remember password</span><br />
+                <button type="signup" class="submit-btn" value="Signup">Sign in</button> 
+            </form>
+            <form id="sign-up" class="input-group">
+                <label for="fname">First name*:</label>
+                <input type="text" class="input-field" id="fname" placeholder=" Will" required>
+                <label for="lname">Last name*:</label>
+                <input type="text" class="input-field" id="lname" placeholder=" Smith" required><br />
+                <label for="phone#">Phone number*:</label>
+                <input type="text" class="input-field" id="phone#" placeholder=" 0125686868" required><br />
+                <label for="dob">Date of birth*:</label><br />
+                <input type="text" class="input-field" id="dob" placeholder=" mm/dd/yyyy" required><br />
+                <label for="email">Email*:</label>
+                <input type="text" class="input-field" id="email" placeholder=" willsmith@gmail.com"required>
+                <label for="password">Password*:</label>
+                <input type="text" class="input-field" id="password" placeholder=" character, number, special icon" required><br />
+                <p class="input-field">Gender:<br />
+                     <input type="radio" id="male" name="fav_language" value="Male">
+                     <label for="male">Male</label>
+                     <input type="radio" id="female" name="fav_language" value="Female">
+                     <label for="female">Female</label>
+                     <input type="radio" id="others" name="fav_language" value="Others">
+                     <label for="female">Others</label>
+                </p>
+                <p>Nationality:<br />
+                    <select name="nation" class="input-field" id="nation">
+                        <option value="earth">I'm from Earth</option>
+                        <option value="outerspace">I'm from Outerspace</option>
+                        <option value="spiritualland">I'm from Spiritual land</option>
+                    </select>
+                </p>
+                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span><br />
+                <button type="signup" class="submit-btn" value="Signup">Sign up</button>  
+            </form> 
+        </div>  
+        
+    </div>
+
+    <script>
+        var x = document.getElementById("sign-in");
+        var y = document.getElementById("sign-up");
+        var z = document.getElementById("btn");
+
+        function Signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        } 
+        function Signin(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        } 
+    </script>
+    
+</body>
+</html>
+
